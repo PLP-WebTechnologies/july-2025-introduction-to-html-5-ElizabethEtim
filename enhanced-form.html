@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An enhanced HTML5 form with media, lists, and tables demonstrating modern HTML structure and validation." />
+  <meta name="author" content="Elizabeth zetim" />
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+    <header>
+    <h1>Enhanced HTML5 Form Example</h1>
+    <p>This page demonstrates semantic HTML with an accessible form, media, lists, and a table.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Healthy Snacks List</h2>
+      <ul>
+        <li>Fruit salad</li>
+        <li>Yogurt with honey</li>
+        <li>Mixed nuts</li>
+        <li>Granola bars</li>
+        <li>Vegetable sticks with hummus</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Nutrition Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Snack</th>
+            <th>Calories</th>
+            <th>Protein (g)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple</td>
+            <td>95</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Greek Yogurt</td>
+            <td>100</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Almonds (10 pcs)</td>
+            <td>70</td>
+            <td>2.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Snack Preparation Video</h2>
+      <video controls width="320">
+        <source src="healthy-snacks.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Feedback Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <label for="name">Full Name:</label><br />
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required /><br /><br />
+
+          <label for="email">Email Address:</label><br />
+          <input type="email" id="email" name="email" placeholder="example@example.com" required /><br /><br />
+
+          <label for="age">Age:</label><br />
+          <input type="number" id="age" name="age" min="13" max="120" required /><br /><br />
+
+          <label for="country">Country:</label><br />
+          <input type="text" id="country" name="country" readonly value="Nigeria" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="snack-type">Favorite Snack Type:</label><br />
+          <select id="snack-type" name="snack-type" required>
+            <option value="">--Please choose an option--</option>
+            <option value="fruit">Fruit</option>
+            <option value="nuts">Nuts</option>
+            <option value="dairy">Dairy</option>
+            <option value="veggies">Vegetables</option>
+          </select><br /><br />
+
+          <label>Rate our content:</label><br />
+          <input type="radio" id="good" name="rating" value="good" required />
+          <label for="good">Good</label>
+
+          <input type="radio" id="average" name="rating" value="average" />
+          <label for="average">Average</label>
+
+          <input type="radio" id="poor" name="rating" value="poor" />
+          <label for="poor">Poor</label><br /><br />
+
+          <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" />
+            Subscribe to newsletter
+          </label><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Comments</legend>
+          <textarea id="comments" name="comments" placeholder="Your feedback..." rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <br />
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Healthy Habits. All rights reserved.</p>
+  </footer>
+</body>
+</html>
